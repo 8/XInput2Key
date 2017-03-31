@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:XInput2Key"
         mc:Ignorable="d"
         xmlns:v="clr-namespace:XInput2Key.View"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow" Height="350" Width="800">
   <Grid>
     <v:MainView DataContext="{Binding MainViewModel, Source={StaticResource Locator}}" />
   </Grid>

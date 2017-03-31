@@ -1,8 +1,8 @@
 ﻿namespace XInput2Key.Service
 {
-    using SharpDX.XInput;
     using System;
     using System.Collections.Generic;
+    using SharpDX.XInput;
     using XInput2Key.ViewModel;
 
     public interface IGamepadService

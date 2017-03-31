@@ -34,7 +34,8 @@
 
         public MainViewModel(IXInputService xinputService,
                              ISendKeysService sendKeysService,
-                             IGamepadService gamepadService)
+                             IGamepadService gamepadService,
+                             IKeyboardEmulatorService keyboardEmulatorService)
         {
             this.XInputService = xinputService;
             this.SendKeysService = sendKeysService;

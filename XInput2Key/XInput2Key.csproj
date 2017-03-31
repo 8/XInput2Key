@@ -80,9 +80,13 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="BaseViewModel.cs" />
+    <Compile Include="Factory\InputFactory.cs" />
+    <Compile Include="Factory\InputKey.cs" />
     <Compile Include="NativeApi.cs" />
     <Compile Include="RelayCommand.cs" />
     <Compile Include="Service\GamepadService.cs" />
+    <Compile Include="Service\KeyboardEmulatorService.cs" />
+    <Compile Include="Service\MappingService.cs" />
     <Compile Include="Service\SendKeysService.cs" />
     <Compile Include="Service\XInputService.cs" />
     <Compile Include="SynchronizationContextObject.cs" />
@@ -144,8 +148,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Factory\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
