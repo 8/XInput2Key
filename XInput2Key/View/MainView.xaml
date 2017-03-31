@@ -9,12 +9,19 @@
   <Grid>
     <Grid.RowDefinitions>
       <RowDefinition Height="Auto" />
+      <RowDefinition Height="Auto" />
+      <RowDefinition Height="Auto" />
+      <RowDefinition Height="Auto" />
+      <RowDefinition Height="Auto" />
     </Grid.RowDefinitions>
 
     <Grid.ColumnDefinitions>
       <ColumnDefinition Width="Auto" />
     </Grid.ColumnDefinitions>
-    
-    <Button Padding="4,2,4,2" Content="Start Listen" Command="{Binding StartListenCommand}" />
+    <CheckBox Grid.Row="0" IsChecked="{Binding IsListening}" Content="Is Listening" />
+    <CheckBox Grid.Row="1" IsEnabled="false" IsChecked="{Binding IsConnected1}" Content="Is Connected1" />
+    <CheckBox Grid.Row="2" IsEnabled="false" IsChecked="{Binding IsConnected2}" Content="Is Connected2" />
+    <CheckBox Grid.Row="3" IsEnabled="false" IsChecked="{Binding IsConnected3}" Content="Is Connected3" />
+    <CheckBox Grid.Row="4" IsEnabled="false" IsChecked="{Binding IsConnected4}" Content="Is Connected4" />
   </Grid>
 </UserControl>
