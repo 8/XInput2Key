@@ -41,6 +41,8 @@
             this.GamepadService = gamepadService;
 
             this.PropertyChanged += this_PropertyChanged;
+
+            this.IsListening = true;
         }
 
         private void this_PropertyChanged(object sender, PropertyChangedEventArgs e)
