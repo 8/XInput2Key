@@ -4,11 +4,16 @@
     using SharpDX.XInput;
     using XInput2Key.Factory;
 
-    public interface IKeyboardEmulatorService { }
+    public interface IKeyboardEmulatorService
+    {
+        bool IsEnabled { get; set; }
+    }
 
     class KeyboardEmulatorService : IKeyboardEmulatorService
     {
         private IDisposable KeystrokeSubscription;
+
+        public bool IsEnabled { get; set; }
 
         public KeyboardEmulatorService(ISendKeysService sendKeysService,
                                        IXInputService xinputService,
@@ -17,13 +22,16 @@
         {
             this.KeystrokeSubscription = xinputService.Keystrokes.Subscribe(keystroke =>
             {
-                if (keystroke.Flags == KeyStrokeFlags.KeyDown)
+                if (this.IsEnabled)
                 {
-                    var key = mappingService.Map(keystroke.VirtualKey);
-                    if (key != null)
+                    if (keystroke.Flags == KeyStrokeFlags.KeyDown)
                     {
-                        var inputs = inputFactory.GetKeyDownUp(key.Value);
-                        sendKeysService.SendKeys(inputs);
+                        var key = mappingService.Map(keystroke.VirtualKey);
+                        if (key != null)
+                        {
+                            var inputs = inputFactory.GetKeyDownUp(key.Value);
+                            sendKeysService.SendKeys(inputs);
+                        }
                     }
                 }
             });

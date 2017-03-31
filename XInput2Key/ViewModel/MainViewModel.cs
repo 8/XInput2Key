@@ -26,11 +26,28 @@
         }
         #endregion
 
+        #region IsEmulatingKeys
+        private bool _IsEmulatingKeys;
+        public bool IsEmulatingKeys
+        {
+            get { return _IsEmulatingKeys; }
+            set
+            {
+                if (_IsEmulatingKeys != value)
+                {
+                    _IsEmulatingKeys = value;
+                    OnPropertyChanged(nameof(IsEmulatingKeys));
+                }
+            }
+        }
+        #endregion
+
         public IEnumerable<GamepadViewModel> Gamepads { get { return this.GamepadService.Gamepads; } }
 
         private readonly IXInputService XInputService;
         private readonly ISendKeysService SendKeysService;
         private readonly IGamepadService GamepadService;
+        private readonly IKeyboardEmulatorService KeyboardEmulatorService;
 
         public MainViewModel(IXInputService xinputService,
                              ISendKeysService sendKeysService,
@@ -40,6 +57,7 @@
             this.XInputService = xinputService;
             this.SendKeysService = sendKeysService;
             this.GamepadService = gamepadService;
+            this.KeyboardEmulatorService = keyboardEmulatorService;
 
             this.PropertyChanged += this_PropertyChanged;
 
@@ -52,6 +70,10 @@
             {
                 case nameof(IsListening):
                     this.XInputService.IsListening = this.IsListening;
+                    break;
+
+                case nameof(IsEmulatingKeys):
+                    this.KeyboardEmulatorService.IsEnabled = this.IsEmulatingKeys;
                     break;
             }
         }

@@ -11,14 +11,16 @@
     <Grid.RowDefinitions>
       <RowDefinition Height="Auto" />
       <RowDefinition Height="Auto" />
+      <RowDefinition Height="Auto" />
     </Grid.RowDefinitions>
 
     <Grid.ColumnDefinitions>
       <ColumnDefinition Width="Auto" />
     </Grid.ColumnDefinitions>
     <CheckBox Grid.Row="0" IsChecked="{Binding IsListening}" Content="Is Listening" />
+    <CheckBox Grid.Row="1" IsChecked="{Binding IsEmulatingKeys}" Content="Is Emulating Keys" />
 
-    <ItemsControl Grid.Row="1" ItemsSource="{Binding Gamepads}">
+    <ItemsControl Grid.Row="2" ItemsSource="{Binding Gamepads}">
       <ItemsControl.ItemsPanel>
         <ItemsPanelTemplate>
           <StackPanel Orientation="Horizontal" />
