@@ -58,7 +58,7 @@
                 this.ConnectedSubject.OnNext(new ControllerConnected(controller.UserIndex, controller.IsConnected));
 
                 Keystroke keystroke;
-                var result = controller.GetKeystroke(DeviceQueryType.Any, out keystroke);
+                var result = controller.GetKeystroke(DeviceQueryType.Gamepad, out keystroke);
                 if (result.Success)
                     this.KeystrokeSubject.OnNext(keystroke);
             }

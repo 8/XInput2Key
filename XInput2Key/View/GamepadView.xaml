@@ -7,10 +7,38 @@
              mc:Ignorable="d" 
              d:DesignHeight="300" d:DesignWidth="300">
   <Grid>
-    <Grid.RowDefinitions>
-      <RowDefinition Height="Auto" />
-    </Grid.RowDefinitions>
 
-    <CheckBox IsEnabled="False" Content="IsConnected" IsChecked="{Binding IsConnected}" />
+    <GroupBox>
+
+      <Grid>
+        <Grid.RowDefinitions>
+          <RowDefinition Height="Auto" />
+          <RowDefinition Height="Auto" />
+          <RowDefinition Height="Auto" />
+          <RowDefinition Height="Auto" />
+          <RowDefinition Height="Auto" />
+          <RowDefinition Height="Auto" />
+          <RowDefinition Height="Auto" />
+          <RowDefinition Height="Auto" />
+          <RowDefinition Height="Auto" />
+          <RowDefinition Height="Auto" />
+          <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <CheckBox Grid.Row="0" IsEnabled="False" Content="Is Connected" IsChecked="{Binding IsConnected}" />
+        <CheckBox Grid.Row="1" IsEnabled="False" Content="Is A pressed" IsChecked="{Binding IsAPressed}" />
+        <CheckBox Grid.Row="2" IsEnabled="False" Content="Is B pressed" IsChecked="{Binding IsBPressed}" />
+        <CheckBox Grid.Row="3" IsEnabled="False" Content="Is X pressed" IsChecked="{Binding IsXPressed}" />
+        <CheckBox Grid.Row="4" IsEnabled="False" Content="Is Y pressed" IsChecked="{Binding IsYPressed}" />
+        <CheckBox Grid.Row="5" IsEnabled="False" Content="Is Start pressed" IsChecked="{Binding IsStartPressed}" />
+        <CheckBox Grid.Row="6" IsEnabled="False" Content="Is Back pressed" IsChecked="{Binding IsBackPressed}" />
+        <CheckBox Grid.Row="7" IsEnabled="False" Content="Is LeftTrigger pressed" IsChecked="{Binding IsLeftTriggerPressed}" />
+        <CheckBox Grid.Row="8" IsEnabled="False" Content="Is RightTrigger pressed" IsChecked="{Binding IsRightTriggerPressed}" />
+        <CheckBox Grid.Row="9" IsEnabled="False" Content="Is LeftShoulder pressed" IsChecked="{Binding IsLeftShoulderPressed}" />
+        <CheckBox Grid.Row="10" IsEnabled="False" Content="Is RightShoulder pressed" IsChecked="{Binding IsRightShoulderPressed}" />
+
+      </Grid>
+    </GroupBox>
+
   </Grid>
 </UserControl>

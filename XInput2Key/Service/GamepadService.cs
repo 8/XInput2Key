@@ -36,7 +36,21 @@
 
             this.KeystateSubscription = xinputService.Keystrokes.Subscribe(keystroke =>
             {
+                var gamepad = gamepads[(int)keystroke.UserIndex];
 
+                switch (keystroke.VirtualKey)
+                {
+                    case GamepadKeyCode.A: gamepad.Post(() => gamepad.IsAPressed = (keystroke.Flags == KeyStrokeFlags.KeyDown)); break;
+                    case GamepadKeyCode.B: gamepad.Post(() => gamepad.IsBPressed = (keystroke.Flags == KeyStrokeFlags.KeyDown)); break;
+                    case GamepadKeyCode.X: gamepad.Post(() => gamepad.IsXPressed = (keystroke.Flags == KeyStrokeFlags.KeyDown)); break;
+                    case GamepadKeyCode.Y: gamepad.Post(() => gamepad.IsYPressed = (keystroke.Flags == KeyStrokeFlags.KeyDown)); break;
+                    case GamepadKeyCode.LeftTrigger: gamepad.Post(() => gamepad.IsLeftTriggerPressed = (keystroke.Flags == KeyStrokeFlags.KeyDown)); break;
+                    case GamepadKeyCode.RightTrigger: gamepad.Post(() => gamepad.IsRightTriggerPressed = (keystroke.Flags == KeyStrokeFlags.KeyDown)); break;
+                    case GamepadKeyCode.LeftShoulder: gamepad.Post(() => gamepad.IsLeftShoulderPressed = (keystroke.Flags == KeyStrokeFlags.KeyDown)); break;
+                    case GamepadKeyCode.RightShoulder: gamepad.Post(() => gamepad.IsRightShoulderPressed = (keystroke.Flags == KeyStrokeFlags.KeyDown)); break;
+                    case GamepadKeyCode.Start: gamepad.Post(() => gamepad.IsStartPressed = (keystroke.Flags == KeyStrokeFlags.KeyDown)); break;
+                    case GamepadKeyCode.Back: gamepad.Post(() => gamepad.IsBackPressed = (keystroke.Flags == KeyStrokeFlags.KeyDown)); break;
+                }
             });
         }
     }

@@ -22,6 +22,165 @@
         }
         #endregion
 
+        #region IsAPressed
+        private bool _IsAPressed;
+        public bool IsAPressed
+        {
+            get { return _IsAPressed; }
+            set
+            {
+                if (_IsAPressed != value)
+                {
+                    _IsAPressed = value;
+                    OnPropertyChanged(nameof(IsAPressed));
+                }
+            }
+        }
+        #endregion
+
+        #region IsBPressed
+        private bool _IsBPressed;
+        public bool IsBPressed
+        {
+            get { return _IsBPressed; }
+            set
+            {
+                if (_IsBPressed != value)
+                {
+                    _IsBPressed = value;
+                    OnPropertyChanged(nameof(IsBPressed));
+                }
+            }
+        }
+        #endregion
+
+        #region IsXPressed
+        private bool _IsXPressed;
+        public bool IsXPressed
+        {
+            get { return _IsXPressed; }
+            set
+            {
+                if (_IsXPressed != value)
+                {
+                    _IsXPressed = value;
+                    OnPropertyChanged(nameof(IsXPressed));
+                }
+            }
+        }
+        #endregion
+
+        #region IsYPressed
+        private bool _IsYPressed;
+        public bool IsYPressed
+        {
+            get { return _IsYPressed; }
+            set
+            {
+                if (_IsYPressed != value)
+                {
+                    _IsYPressed = value;
+                    OnPropertyChanged(nameof(IsYPressed));
+                }
+            }
+        }
+        #endregion
+
+        #region IsStartPressed
+        private bool _IsStartPressed;
+        public bool IsStartPressed
+        {
+            get { return _IsStartPressed; }
+            set
+            {
+                if (_IsStartPressed != value)
+                {
+                    _IsStartPressed = value;
+                    OnPropertyChanged(nameof(IsStartPressed));
+                }
+            }
+        }
+        #endregion
+
+        #region IsBackPressed
+        private bool _IsBackPressed;
+        public bool IsBackPressed
+        {
+            get { return _IsBackPressed; }
+            set
+            {
+                if (_IsBackPressed != value)
+                {
+                    _IsBackPressed = value;
+                    OnPropertyChanged(nameof(IsBackPressed));
+                }
+            }
+        }
+        #endregion
+
+        #region IsLeftTriggerPressed
+        private bool _IsLeftTriggerPressed;
+        public bool IsLeftTriggerPressed
+        {
+            get { return _IsLeftTriggerPressed; }
+            set
+            {
+                if (_IsLeftTriggerPressed != value)
+                {
+                    _IsLeftTriggerPressed = value;
+                    OnPropertyChanged(nameof(IsLeftTriggerPressed));
+                }
+            }
+        }
+        #endregion
+
+        #region IsRightTriggerPressed
+        private bool _IsRightTriggerPressed;
+        public bool IsRightTriggerPressed
+        {
+            get { return _IsRightTriggerPressed; }
+            set
+            {
+                if (_IsRightTriggerPressed != value)
+                {
+                    _IsRightTriggerPressed = value;
+                    OnPropertyChanged(nameof(IsRightTriggerPressed));
+                }
+            }
+        }
+        #endregion
+
+        #region IsLeftShoulderPressed
+        private bool _IsLeftShoulderPressed;
+        public bool IsLeftShoulderPressed
+        {
+            get { return _IsLeftShoulderPressed; }
+            set
+            {
+                if (_IsLeftShoulderPressed != value)
+                {
+                    _IsLeftShoulderPressed = value;
+                    OnPropertyChanged(nameof(IsLeftShoulderPressed));
+                }
+            }
+        }
+        #endregion
+
+        #region IsRightShoulderPressed
+        private bool _IsRightShoulderPressed;
+        public bool IsRightShoulderPressed
+        {
+            get { return _IsRightShoulderPressed; }
+            set
+            {
+                if (_IsRightShoulderPressed != value)
+                {
+                    _IsRightShoulderPressed = value;
+                    OnPropertyChanged(nameof(IsRightShoulderPressed));
+                }
+            }
+        }
+        #endregion
 
     }
 }

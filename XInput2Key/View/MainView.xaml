@@ -19,6 +19,11 @@
     <CheckBox Grid.Row="0" IsChecked="{Binding IsListening}" Content="Is Listening" />
 
     <ItemsControl Grid.Row="1" ItemsSource="{Binding Gamepads}">
+      <ItemsControl.ItemsPanel>
+        <ItemsPanelTemplate>
+          <StackPanel Orientation="Horizontal" />
+        </ItemsPanelTemplate>
+      </ItemsControl.ItemsPanel>
       <ItemsControl.ItemTemplate>
         <DataTemplate>
           <v:GamepadView DataContext="{Binding}" />
