@@ -9,6 +9,8 @@
         xmlns:v="clr-namespace:XInput2Key.View"
         Title="XInput2Key" Height="350" Width="800">
   <Grid>
-    <v:MainView DataContext="{Binding MainViewModel, Source={StaticResource Locator}}" />
+    <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
+      <v:MainView DataContext="{Binding MainViewModel, Source={StaticResource Locator}}" />
+    </ScrollViewer>
   </Grid>
 </Controls:MetroWindow>
