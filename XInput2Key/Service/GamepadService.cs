@@ -22,10 +22,10 @@
         {
             var gamepads = this._Gamepads = new[]
             {
-                new GamepadViewModel(),
-                new GamepadViewModel(),
-                new GamepadViewModel(),
-                new GamepadViewModel()
+                new GamepadViewModel { Name = "Controller 1" },
+                new GamepadViewModel { Name = "Controller 2" },
+                new GamepadViewModel { Name = "Controller 3" },
+                new GamepadViewModel { Name = "Controller 4" }
             };
 
             this.ConnectedSubscription = xinputService.Connected.Subscribe(controllerConnected =>

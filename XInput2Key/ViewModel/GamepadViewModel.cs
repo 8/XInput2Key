@@ -182,5 +182,25 @@
         }
         #endregion
 
+        #region Name
+        private string _Name;
+        public string Name
+        {
+            get { return _Name; }
+            set
+            {
+                if (_Name != value)
+                {
+                    _Name = value;
+                    OnPropertyChanged(nameof(Name));
+                }
+            }
+        }
+        #endregion
+
+        public GamepadViewModel()
+        {
+        }
+
     }
 }

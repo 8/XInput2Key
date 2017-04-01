@@ -8,7 +8,7 @@
              d:DesignHeight="300" d:DesignWidth="300">
   <Grid>
 
-    <GroupBox>
+    <GroupBox Header="{Binding Name}">
 
       <Grid>
         <Grid.RowDefinitions>
