@@ -40,6 +40,10 @@
                 { InputKey.y, new ScanCodeVirtualKey{ ScanCodeShort = ScanCodeShort.KEY_Y, VirtualKeyShort = VirtualKeyShort.KEY_Y} },
                 { InputKey.l, new ScanCodeVirtualKey{ ScanCodeShort = ScanCodeShort.KEY_L, VirtualKeyShort = VirtualKeyShort.KEY_L} },
                 { InputKey.r, new ScanCodeVirtualKey{ ScanCodeShort = ScanCodeShort.KEY_R, VirtualKeyShort = VirtualKeyShort.KEY_R} },
+                { InputKey.Left, new ScanCodeVirtualKey { ScanCodeShort = ScanCodeShort.LEFT, VirtualKeyShort = VirtualKeyShort.LEFT } },
+                { InputKey.Right, new ScanCodeVirtualKey { ScanCodeShort = ScanCodeShort.RIGHT, VirtualKeyShort = VirtualKeyShort.RIGHT } },
+                { InputKey.Up, new ScanCodeVirtualKey { ScanCodeShort = ScanCodeShort.UP, VirtualKeyShort = VirtualKeyShort.UP} },
+                { InputKey.Down, new ScanCodeVirtualKey { ScanCodeShort = ScanCodeShort.DOWN, VirtualKeyShort = VirtualKeyShort.DOWN } }
             };
         }
 

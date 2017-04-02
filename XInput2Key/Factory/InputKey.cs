@@ -19,6 +19,10 @@
         x,
         y,
         l,
-        r
+        r,
+        Left,
+        Right,
+        Up,
+        Down
     }
 }
