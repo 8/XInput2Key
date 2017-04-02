@@ -48,7 +48,11 @@
                     new ConfigButtonModel{ Button = GamepadKeyCode.X, Key = InputKey.x },
                     new ConfigButtonModel{ Button = GamepadKeyCode.Y, Key = InputKey.y },
                     new ConfigButtonModel{ Button = GamepadKeyCode.LeftShoulder, Key = InputKey.l },
-                    new ConfigButtonModel{Button  = GamepadKeyCode.RightShoulder, Key = InputKey.r }
+                    new ConfigButtonModel{ Button  = GamepadKeyCode.RightShoulder, Key = InputKey.r },
+                    new ConfigButtonModel{ Button = GamepadKeyCode.DPadLeft, Key = InputKey.Left },
+                    new ConfigButtonModel{ Button = GamepadKeyCode.DPadUp, Key = InputKey.Up },
+                    new ConfigButtonModel{ Button = GamepadKeyCode.DPadRight, Key = InputKey.Right },
+                    new ConfigButtonModel{ Button = GamepadKeyCode.DPadDown, Key = InputKey.Down }
                 }
             };
         }
