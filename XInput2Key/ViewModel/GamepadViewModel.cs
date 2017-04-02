@@ -182,6 +182,70 @@
         }
         #endregion
 
+        #region IsDPadLeftPressed
+        private bool _IsDPadLeftPressed;
+        public bool IsDPadLeftPressed
+        {
+            get { return _IsDPadLeftPressed; }
+            set
+            {
+                if (_IsDPadLeftPressed != value)
+                {
+                    _IsDPadLeftPressed = value;
+                    OnPropertyChanged(nameof(IsDPadLeftPressed));
+                }
+            }
+        }
+        #endregion
+
+        #region IsDPadUpPressed
+        private bool _IsDPadUpPressed;
+        public bool IsDPadUpPressed
+        {
+            get { return _IsDPadUpPressed; }
+            set
+            {
+                if (_IsDPadUpPressed != value)
+                {
+                    _IsDPadUpPressed = value;
+                    OnPropertyChanged(nameof(IsDPadUpPressed));
+                }
+            }
+        }
+        #endregion
+
+        #region IsDPadRightPressed
+        private bool _IsDPadRightPressed;
+        public bool IsDPadRightPressed
+        {
+            get { return _IsDPadRightPressed; }
+            set
+            {
+                if (_IsDPadRightPressed != value)
+                {
+                    _IsDPadRightPressed = value;
+                    OnPropertyChanged(nameof(IsDPadRightPressed));
+                }
+            }
+        }
+        #endregion
+
+        #region IsDPadDownPressed
+        private bool _IsDPadDownPressed;
+        public bool IsDPadDownPressed
+        {
+            get { return _IsDPadDownPressed; }
+            set
+            {
+                if (_IsDPadDownPressed != value)
+                {
+                    _IsDPadDownPressed = value;
+                    OnPropertyChanged(nameof(IsDPadDownPressed));
+                }
+            }
+        }
+        #endregion
+
         #region Name
         private string _Name;
         public string Name

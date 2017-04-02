@@ -50,6 +50,10 @@
                     case GamepadKeyCode.RightShoulder: gamepad.Post(() => gamepad.IsRightShoulderPressed = (keystroke.Flags == KeyStrokeFlags.KeyDown)); break;
                     case GamepadKeyCode.Start: gamepad.Post(() => gamepad.IsStartPressed = (keystroke.Flags == KeyStrokeFlags.KeyDown)); break;
                     case GamepadKeyCode.Back: gamepad.Post(() => gamepad.IsBackPressed = (keystroke.Flags == KeyStrokeFlags.KeyDown)); break;
+                    case GamepadKeyCode.DPadLeft: gamepad.Post(() => gamepad.IsDPadLeftPressed = (keystroke.Flags == KeyStrokeFlags.KeyDown)); break;
+                    case GamepadKeyCode.DPadUp: gamepad.Post(() => gamepad.IsDPadUpPressed = (keystroke.Flags == KeyStrokeFlags.KeyDown)); break;
+                    case GamepadKeyCode.DPadRight: gamepad.Post(() => gamepad.IsDPadRightPressed = (keystroke.Flags == KeyStrokeFlags.KeyDown)); break;
+                    case GamepadKeyCode.DPadDown: gamepad.Post(() => gamepad.IsDPadDownPressed = (keystroke.Flags == KeyStrokeFlags.KeyDown)); break;
                 }
             });
         }

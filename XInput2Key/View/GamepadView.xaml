@@ -23,6 +23,10 @@
           <RowDefinition Height="Auto" />
           <RowDefinition Height="Auto" />
           <RowDefinition Height="Auto" />
+          <RowDefinition Height="Auto" />
+          <RowDefinition Height="Auto" />
+          <RowDefinition Height="Auto" />
+          <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
 
         <CheckBox Grid.Row="0" IsEnabled="False" Content="Is Connected" IsChecked="{Binding IsConnected}" />
@@ -36,7 +40,10 @@
         <CheckBox Grid.Row="8" IsEnabled="False" Content="Is RightTrigger pressed" IsChecked="{Binding IsRightTriggerPressed}" />
         <CheckBox Grid.Row="9" IsEnabled="False" Content="Is LeftShoulder pressed" IsChecked="{Binding IsLeftShoulderPressed}" />
         <CheckBox Grid.Row="10" IsEnabled="False" Content="Is RightShoulder pressed" IsChecked="{Binding IsRightShoulderPressed}" />
-
+        <CheckBox Grid.Row="11" IsEnabled="False" Content="Is DPad Left pressed" IsChecked="{Binding IsDPadLeftPressed}" />
+        <CheckBox Grid.Row="12" IsEnabled="False" Content="Is DPad Up pressed" IsChecked="{Binding IsDPadUpPressed}" />
+        <CheckBox Grid.Row="13" IsEnabled="False" Content="Is DPad Right pressed" IsChecked="{Binding IsDPadRightPressed}" />
+        <CheckBox Grid.Row="14" IsEnabled="False" Content="Is DPad Down pressed" IsChecked="{Binding IsDPadDownPressed}" />
       </Grid>
     </GroupBox>
 
