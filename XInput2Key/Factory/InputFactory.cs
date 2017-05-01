@@ -1,6 +1,5 @@
 ﻿namespace XInput2Key.Factory
 {
-    using System;
     using System.Collections.Generic;
 
     public interface IInputFactory

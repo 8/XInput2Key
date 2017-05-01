@@ -1,7 +1,6 @@
 ﻿namespace XInput2Key.Service
 {
     using SharpDX.XInput;
-    using System;
     using XInput2Key.Factory;
     using XInput2Key.Model;
 
