@@ -36,7 +36,7 @@
         private Subject<Keystroke> KeystrokeSubject;
         public IObservable<Keystroke> Keystrokes { get { return this.KeystrokeSubject; } }
 
-        private Controller[] Controllers;
+        private readonly Controller[] Controllers;
 
         public XInputService()
         {
